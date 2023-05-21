@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package api;
+
+option go_package = "./";
+
+service LinkShorter {
+  rpc Post(AddRequest) returns (AddResponse) {}
+  rpc Get(AddRequest) returns (AddResponse) {}
+}
+
+message AddRequest {
+  string link = 1;
+}
+
+message AddResponse {
+  string result = 1;
+}
