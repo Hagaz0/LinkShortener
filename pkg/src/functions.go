@@ -46,7 +46,7 @@ func IsValidUrl(token string) bool {
 func (d *DB) NewPostgresDB() error {
 	cfg := Config{
 		Host:     "172.23.0.2",
-		Port:     "5432",
+		Port:     "5431",
 		Username: "postgres",
 		Password: "mypassword",
 		DBName:   "postgres",
